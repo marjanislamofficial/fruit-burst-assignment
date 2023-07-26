@@ -42,8 +42,45 @@
 <body class="font-lato">
     <header>
         <!-- Navbar Section -->
-        <nav class="max-w-screen-xl mx-auto border border-red-600">
-
+        <nav class="max-w-screen-xl mx-auto rounded-full ">
+            <div class="navbar bg-base-100 lg:bg-common lg:rounded-full">
+                <div class="navbar-start md:w-[750px] lg:w-[1278px]">
+                  <div class="dropdown ">
+                    <label tabindex="0" class="text-[50px] btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  <div class="hidden md:hidden lg:block ml-10 text-white">
+                    <a href="">Home</a>
+                    <a class="ml-8" href="">About Us</a>
+                    <a class="ml-8" href="">Shop</a>
+                    <a class="ml-8" href="">All Fruits</a>
+                  </div>
+                 <div class="flex items-center gap-4 ml-[90px]  lg:ml-[130px] md:ml-[200px]">
+                    <img src="./images/main.png" alt="">
+                    <p class=" lg:text-white text-2xl font-extrabold md:text-[40px] lg:text-[40px] font-bold">Fruit Burst</p>
+                 </div>
+                 <div class="hidden md:hidden lg:block ">
+                    <img class="absolute ml-[425px] mt-[12px]" src="./images/Frame (1).svg" alt="">
+                    <input class="ml-32 rounded-full py-3 pl-5 pr-[150px]" type="text" placeholder="Search here" name="" id="">
+                 </div>
+                </div>
+                <div class="navbar-center hidden lg:hidden">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+                
+              </div>
         </nav>
         <!-- Banner Section -->
         <div class="w-[95%] md:w-[95%] lg:w-full relative max-w-screen-xl mx-auto mt-16">
@@ -55,12 +92,12 @@
                         <div class="hero-overlay bg-opacity-60 rounded">
                             <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
                         <p class="pt-6">We supply highly quality organic products</p>
-                        <button class="mt-9 mb-[50px] lg:mb-[0px] btn">Shop now</button>
+                        <button class="mt-9 mb-[50px] lg:mb-[0px] btn bg-common border-none text-white">Shop now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide4" class="btn btn-circle bg-slate-800 border-none text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-slate-800 border-none text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
@@ -69,12 +106,12 @@
                         <div class="hero-overlay bg-opacity-60 rounded">
                             <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
                         <p class="pt-6">We supply highly quality organic products</p>
-                        <button class="mt-4 btn">Shop now</button>
+                        <button class="mt-4 btn bg-common border-none text-white">Shop now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="btn btn-circle bg-slate-800 border-none text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-slate-800 border-none text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
@@ -83,12 +120,12 @@
                         <div class="hero-overlay bg-opacity-60 rounded">
                             <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
                         <p class="pt-6">We supply highly quality organic products</p>
-                        <button class="mt-4 btn">Shop now</button>
+                        <button class="mt-4 btn bg-common border-none text-white">Shop now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                        <a href="#slide2" class="btn btn-circle bg-slate-800 border-none text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-slate-800 border-none text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
@@ -97,12 +134,12 @@
                         <div class="hero-overlay bg-opacity-60 rounded">
                             <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
                         <p class="pt-6">We supply highly quality organic products</p>
-                        <button class="mt-4 btn">Shop now</button>
+                        <button class="mt-4 btn bg-common border-none text-white">Shop now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        <a href="#slide3" class="btn btn-circle bg-slate-800 border-none text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-slate-800 border-none text-white">❯</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +229,7 @@
                     <p class="text-center mt-4">Apples</p>
                     <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
                     
-                    <div class="text-center mt-[32px]">
+                    <div class="text-center mt-[32px] mb-[30px]">
                         
                         <button class="btn bg-transparent border-none text-common" onclick="my_modal_1.showModal()">Details</button>
                         <dialog id="my_modal_1" class="modal">
@@ -220,7 +257,7 @@
            </div>
            <div>
             <div class="card  bg-base-100 shadow-xl border ">
-                <figure class="px-10 pt-10">
+                <figure class="px-10 pt-8">
                     <img src="./images/fruit7.png" alt="Shoes" class="rounded-none" />
                 </figure>
                 <div class=" items-center text-center">
@@ -229,7 +266,7 @@
                     <p class="text-center mt-4">Orange</p>
                     <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
                     
-                    <div class="text-center mt-[32px]">
+                    <div class="text-center mt-[32px] mb-[30px]">
                         
                         <button class="btn bg-transparent border-none text-common" onclick="my_modal_2.showModal()">Details</button>
                         <dialog id="my_modal_2" class="modal">
@@ -266,7 +303,7 @@
                     <p class="text-center mt-4">Red Dragon</p>
                     <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
                     
-                    <div class="text-center mt-[32px]">
+                    <div class="text-center mt-[32px] mb-[30px]">
                         
                         <button class="btn bg-transparent border-none text-common" onclick="my_modal_3.showModal()">Details</button>
                         <dialog id="my_modal_3" class="modal">
@@ -303,7 +340,7 @@
                     <p class="text-center mt-4">Banana</p>
                     <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
                     
-                    <div class="text-center mt-[32px]">
+                    <div class="text-center mt-[32px] mb-[30px]">
                         
                         <button class="btn bg-transparent border-none text-common" onclick="my_modal_4.showModal()">Details</button>
                         <dialog id="my_modal_4" class="modal">
@@ -522,7 +559,7 @@
     </main>
 
     <!-- Footer section  -->
-    <footer class="footer footer-center mt-[140px] pt-10 bg-[#121212]  rounded">
+    <footer class="footer footer-center mt-[140px] pt-[100px] bg-[#121212] pb-[100px]">
         <div class="flex">
             <div class="">
                 <img src="./images/main.png" alt="">
@@ -540,7 +577,7 @@
           <a class="link link-hover">My Account</a>
         </div> 
         <div>
-          <div class="grid grid-flow-col gap-8 text-[30px]">
+          <div class="grid grid-flow-col gap-5 md:gap-14 text-[30px]">
             <a><img src="./images/twitter 1.svg" alt=""></a> 
             <a><img src="./images/facebook 1 (1).svg" alt=""></a> 
             <a><img src="./images/Group 49.svg" alt=""></a> 
@@ -551,8 +588,6 @@
           </div>
         </div> 
       </footer>
-
-
 </body>
 
 </html>
