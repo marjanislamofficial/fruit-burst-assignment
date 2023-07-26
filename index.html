@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Daisy ui & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom tailwind color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                common: '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/main.png" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Fruit Burst</title>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head> 
+
+<body class="font-lato">
+    <header>
+        <!-- Navbar Section -->
+        <nav class="max-w-screen-xl mx-auto border border-red-600">
+
+        </nav>
+        <!-- Banner Section -->
+        <div class="w-[95%] md:w-[95%] lg:w-full relative max-w-screen-xl mx-auto mt-16">
+            <div class=" carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <div class="w-full lg:h-[600px] rounded text-center text-white"
+                        style="background-image: url(./images/banner1.png);">
+                        <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
+                        <p class="pt-6">We supply highly quality organic products</p>
+                        <button class="mt-9 mb-[50px] lg:mb-[0px] btn">Shop now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="w-full rounded text-center text-white"
+                        style="background-image: url(./images/banner2.png);">
+                        <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
+                        <p class="pt-6">We supply highly quality organic products</p>
+                        <button class="mt-4 btn">Shop now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="w-full rounded text-center text-white"
+                        style="background-image: url(./images/banner3.png);">
+                        <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
+                        <p class="pt-6">We supply highly quality organic products</p>
+                        <button class="mt-4 btn">Shop now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="w-full rounded text-center text-white"
+                        style="background-image: url(./images/banner4.png);">
+                        <h1 class="font-extrabold text-7xl pt-16">Exotic tastes at your <br> doorstep</h1>
+                        <p class="pt-6">We supply highly quality organic products</p>
+                        <button class="mt-4 btn">Shop now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block md:hidden">
+                <div
+                    class=" lg:absolute top-[450px] left-[170px]  w-9/12 mx-auto bg-white p-14 flex justify-between items-center text-center ">
+                    <div class="">
+                        <img src="./images/fruit1.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/fruit2.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/fruit3.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/fruit5.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto mt-[50px] md:mt-[50px] lg:mt-[200px]">
+        <!-- Deal of the day Section -->
+        <div class="text-center md:text-center lg:text-left lg:flex justify-between ">
+            <div>
+                <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="ml-5 md:ml-[180px]">
+                <div class="flex text-center ml-3  items-center gap-4 mt-5">
+                    <div class="">
+                        <div class="flex ">
+                            <h1 class="text-5xl font-extrabold">23</h1>
+                            <img src="./images/Frame.svg" alt="">
+
+                        </div>
+                        <p class="">Days</p>
+                    </div>
+                    <div class="">
+                        <div class="flex ">
+                            <h1 class="text-5xl font-extrabold">15</h1>
+                            <img src="./images/Frame.svg" alt="">
+
+                        </div>
+                        <p class="">Hours</p>
+                    </div>
+                    <div class="">
+                        <div class="flex ">
+                            <h1 class="text-5xl font-extrabold">25</h1>
+                            <img src="./images/Frame.svg" alt="">
+
+                        </div>
+                        <p class="">Minutes</p>
+                    </div>
+                    <div class="">
+                        <div class="flex ">
+                            <h1 class="text-5xl font-extrabold">08</h1>
+                            <img src="./images/Frame.svg" alt="">
+
+                        </div>
+                        <p class="">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Part of the Section -->
+        <div class="w-[95%] md:w-[95%] lg:w-full mt-12 mx-auto gap-3 grid md:gap-2 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+           <div>
+            <div class="card  bg-base-100 shadow-xl border ">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-none" />
+                </figure>
+                <div class=" items-center text-center">
+                    <h2 class="mt-5 text-center text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr class="w-[70%] ml-[60px] mt-4">
+                    <p class="text-center mt-4">Apples</p>
+                    <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
+                    
+                    <div class="text-center mt-[32px]">
+                        
+                        <button class="btn bg-transparent border-none text-common" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+
+                                <img class="w-[45%] ml-[90px] md:ml-[140px] md:w-[40%] lg:ml-[140px] lg:w-[40%]" src="./images/fruit6.png" alt="">
+
+                                <h3 class="mt-4 font-bold text-lg">Apples</h3>
+
+                                <p class="mt-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+                                <img class="pl-[100px] md:pl-[160px] lg:pl-[160px] mt-5" src="./images/Group 24.svg" alt="">
+
+                                <div class="modal-action pr-[70px] md:pr-[130px] lg:pr-[130px]">
+                                    
+                                    <button class="btn mr-2 bg-transparent text-common border-common">Close</button>
+                                    <button class="btn bg-common text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+           <div>
+            <div class="card  bg-base-100 shadow-xl border ">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-none" />
+                </figure>
+                <div class=" items-center text-center">
+                    <h2 class="mt-5 text-center text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr class="w-[70%] ml-[60px] mt-4">
+                    <p class="text-center mt-4">Apples</p>
+                    <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
+                    
+                    <div class="text-center mt-[32px]">
+                        
+                        <button class="btn bg-transparent border-none text-common" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <form method="dialog" class="modal-box">
+
+                                <img class="w-[45%] ml-[90px] md:ml-[140px] md:w-[40%] lg:ml-[140px] lg:w-[40%]" src="./images/fruit6.png" alt="">
+
+                                <h3 class="mt-4 font-bold text-lg">Apples</h3>
+
+                                <p class="mt-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+                                <img class="pl-[100px] md:pl-[160px] lg:pl-[160px] mt-5" src="./images/Group 24.svg" alt="">
+
+                                <div class="modal-action pr-[70px] md:pr-[130px] lg:pr-[130px]">
+                                    
+                                    <button class="btn mr-2 bg-transparent text-common border-common">Close</button>
+                                    <button class="btn bg-common text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+           <div>
+            <div class="card  bg-base-100 shadow-xl border ">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-none" />
+                </figure>
+                <div class=" items-center text-center">
+                    <h2 class="mt-5 text-center text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr class="w-[70%] ml-[60px] mt-4">
+                    <p class="text-center mt-4">Apples</p>
+                    <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
+                    
+                    <div class="text-center mt-[32px]">
+                        
+                        <button class="btn bg-transparent border-none text-common" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <form method="dialog" class="modal-box">
+
+                                <img class="w-[45%] ml-[90px] md:ml-[140px] md:w-[40%] lg:ml-[140px] lg:w-[40%]" src="./images/fruit6.png" alt="">
+
+                                <h3 class="mt-4 font-bold text-lg">Apples</h3>
+
+                                <p class="mt-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+                                <img class="pl-[100px] md:pl-[160px] lg:pl-[160px] mt-5" src="./images/Group 24.svg" alt="">
+
+                                <div class="modal-action pr-[70px] md:pr-[130px] lg:pr-[130px]">
+                                    
+                                    <button class="btn mr-2 bg-transparent text-common border-common">Close</button>
+                                    <button class="btn bg-common text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+           <div>
+            <div class="card  bg-base-100 shadow-xl border ">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-none" />
+                </figure>
+                <div class=" items-center text-center">
+                    <h2 class="mt-5 text-center text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr class="w-[70%] ml-[60px] mt-4">
+                    <p class="text-center mt-4">Apples</p>
+                    <img class="ml-[120px] md:ml-[100px] lg:ml-[70px] mt-[20px]" src="./images/Group 24.svg" alt="">
+                    
+                    <div class="text-center mt-[32px]">
+                        
+                        <button class="btn bg-transparent border-none text-common" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                            <form method="dialog" class="modal-box">
+
+                                <img class="w-[45%] ml-[90px] md:ml-[140px] md:w-[40%] lg:ml-[140px] lg:w-[40%]" src="./images/fruit6.png" alt="">
+
+                                <h3 class="mt-4 font-bold text-lg">Apples</h3>
+
+                                <p class="mt-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+                                <img class="pl-[100px] md:pl-[160px] lg:pl-[160px] mt-5" src="./images/Group 24.svg" alt="">
+
+                                <div class="modal-action pr-[70px] md:pr-[130px] lg:pr-[130px]">
+                                    
+                                    <button class="btn mr-2 bg-transparent text-common border-common">Close</button>
+                                    <button class="btn bg-common text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+          
+        </div>
+        <div class="text-center mt-12">
+            <button class="btn bg-common text-white ">Shop All</button>
+        </div>
+
+        <!-- Meet the team Section -->
+        <div class="w-[95%] md:w-[95%] lg:w-full mx-auto mt-[160px]">
+            <div class="hero min-h-[690px] rounded-2xl" style="background-image: url(./images/team.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                <div class="hero-content text-center text-neutral-content flex flex-col">
+                  <div class="">
+                    <h1 class="mb-5 mt-8 text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 mb-[ md:grid-cols-2  lg:grid-cols-4 items-center gap-9 md:gap-14 lg:gap-[140px] mt-[48px]">
+                    <div class="">
+                        <img class="ml-6" src="./images/member1.png" alt="">
+                        <h1 class="mt-8 text-2xl font-bold">Awlad Hossain</h1>
+                        <p class="mt-2">Fruits Expert</p>
+                        <div class="flex items-center justify-center gap-3 mt-4">
+                            <img src="./images/facebook 1.svg" alt="">
+                            <img src="./images/twitter (1) 1.svg" alt="">
+                            <img src="./images/linkedin 1.svg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="ml-6" src="./images/member2.png" alt="">
+                        <h1 class="mt-8 text-2xl font-bold">Safia Chowdhury</h1>
+                        <p class="mt-2">Fruits Expert</p>
+                        <div class="flex items-center justify-center gap-3 mt-4">
+                            <img src="./images/facebook 1.svg" alt="">
+                            <img src="./images/twitter (1) 1.svg" alt="">
+                            <img src="./images/linkedin 1.svg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="ml-6" src="./images/member3.png" alt="">
+                        <h1 class="mt-8 text-2xl font-bold">Rokib Hossain</h1>
+                        <p class="mt-2">Fruits Expert</p>
+                        <div class="flex items-center justify-center gap-3 mt-4">
+                            <img src="./images/facebook 1.svg" alt="">
+                            <img src="./images/twitter (1) 1.svg" alt="">
+                            <img src="./images/linkedin 1.svg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="ml-6" src="./images/member4.png" alt="">
+                        <h1 class="mt-8 text-2xl font-bold">Chaity</h1>
+                        <p class="mt-2">Fruits Expert</p>
+                        <div class="flex items-center justify-center gap-3 mt-4">
+                            <img src="./images/facebook 1.svg" alt="">
+                            <img src="./images/twitter (1) 1.svg" alt="">
+                            <img src="./images/linkedin 1.svg" alt="">
+                            
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Why Choose us Section -->
+        <div class="w-[95%] md:w-[95%] lg:w-full mx-auto mt-[140px] mb-[48px] text-center">
+            <h1 class="w-[95%] md:w-[95%] lg:w-full mx-auto text-5xl font-extrabold mb-[24px]">Why Choose Us</h1>
+            <p class="w-[95%] md:w-[95%] lg:w-full mx-auto text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div style="background-image: url('./images/Ellipse\ 2.svg');">
+                        <img src="./images/group 1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
